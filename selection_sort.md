@@ -14,7 +14,7 @@ SelectionSort(array, n)
             END IF
         END FOR
         IF minIndex ≠ i then
-            swap(array[i], array[minIndex])
+            SWAP array[i] and array[minIndex]
         END IF
     END FOR
 END
