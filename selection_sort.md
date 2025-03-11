@@ -6,14 +6,16 @@ Selection sort psuedocode
 # Write the psuedocode 
 START
 SelectionSort(array, n)
-    for i from 0 to n-2 do
-        minIndex ← i
-        for j from i+1 to n-1 do
-            if array[j] < array[minIndex] then
-                minIndex ← j
-        end for
-        if minIndex ≠ i then
+    FOR i from 0 to n do
+        minIndex = i
+        FOR j from i+1 to n-1 do
+            IF array[j] < array[minIndex] then
+                minIndex = j
+            END IF
+        END FOR
+        IF minIndex ≠ i then
             swap(array[i], array[minIndex])
-    end for
+        END IF
+    END FOR
 END
 ```
